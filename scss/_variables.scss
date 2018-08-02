@@ -1,0 +1,9 @@
+$primary-color: #444;
+$primary-text-color: #fff;
+$secondary-text-color: #eece1a;
+$secondary-text-bacground: rgba(lighten($primary-color, 2.5), 0.5);
+
+$show-home-background-image: true;
+$home-background-image: url(../img/background.jpg);
+$background-opacity: 0.9;
+$background-overlay: rgba(lighten($primary-color, 2.5), 0.5);

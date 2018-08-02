@@ -4,9 +4,8 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBrand = document.querySelector(".menu-branding");
 const menuNavItems = document.querySelectorAll(".nav-item");
 const menuBtn = document.querySelector(".menu-btn");
-
-//SET INITIAL STATE OF MENU
 let showMenu = false;
+
 menuBtn.addEventListener("click", toggelMenu);
 
 function toggelMenu() {
