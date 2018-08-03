@@ -57,7 +57,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: #000000;
+    background-color: $background-menu-color;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
     &.show {
@@ -100,7 +100,7 @@
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: $primary-text-color;
     @include easeOut;
     &:hover {
       color: $secondary-text-color;

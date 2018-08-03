@@ -2,7 +2,8 @@ $primary-color: #444;
 $primary-text-color: #fff;
 $secondary-text-color: #eece1a;
 $secondary-text-bacground: rgba(lighten($primary-color, 2.5), 0.5);
-
+$background-menu-color: #000;
+$background-full-overlay: rgba($primary-color, 0.9);
 $show-home-background-image: true;
 $home-background-image: url(../img/background.jpg);
 $portrait: url(../img/portrait.jpg);
