@@ -16,9 +16,30 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background: rgba($primary-color, $background-opacity);
+        background: rgba($primary-color, 0.9);
         z-index: -1;
       }
     }
+  }
+}
+//Media Query
+@mixin deviceSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin deviceMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin deviceLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin deviceXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
