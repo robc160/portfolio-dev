@@ -101,6 +101,9 @@
     text-decoration: none;
     color: #fff;
     @include easeOut;
+    &:hover {
+      color: $secondary-text-color;
+    }
   }
 }
 
