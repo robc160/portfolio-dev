@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #ffffff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -76,7 +76,7 @@
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #eece1a; }
@@ -138,7 +138,7 @@ body {
   height: 100%;
   margin: 0;
   background: #444;
-  color: #fff;
+  color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
@@ -197,3 +197,9 @@ a {
 
 .secondary-text-color {
   color: #eece1a; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }

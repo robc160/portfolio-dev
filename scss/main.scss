@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "functions";
 @import "menu";
 @import "mobile";
 
@@ -12,7 +13,7 @@ body {
   height: 100%;
   margin: 0;
   background: $primary-color;
-  color: $primary-text-color;
+  color: set-text-color($primary-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
@@ -71,4 +72,13 @@ a {
 
 .secondary-text-color {
   color: $secondary-text-color;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
 }
