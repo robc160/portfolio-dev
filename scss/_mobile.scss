@@ -1,8 +1,14 @@
 //Widescreen Devices
 @include deviceXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 //Desktops - Laptops
 @include deviceLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 //Tablets
 @include deviceMd {
@@ -22,6 +28,9 @@
       "job2"
       "job3";
     grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 //Phones
@@ -61,5 +70,8 @@
       width: 125px;
       height: 125px;
     }
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }

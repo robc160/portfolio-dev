@@ -1,0 +1,24 @@
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  i {
+    margin-right: 0.5rem;
+  }
+  &:hover {
+    background: $secondary-text-color;
+    color: set-text-color($secondary-text-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: $primary-text-color;
+}
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: darken($primary-text-color, 100);
+}

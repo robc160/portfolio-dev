@@ -31,3 +31,18 @@
     border-bottom: $secondary-text-color 5px solid;
   }
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  img {
+    width: 100%;
+    border: 3px $primary-text-color solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-text-color;
+      @include easeOut;
+    }
+  }
+}
