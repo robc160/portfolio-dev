@@ -75,6 +75,26 @@ a {
   color: $secondary-text-color;
 }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  div {
+    font-size: 2rem;
+    border: 3px $primary-text-color solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $background-menu-color;
+      color: set-text-color($secondary-text-bacground);
+    }
+  }
+}
+
 footer {
   text-align: center;
   padding: 1rem;
